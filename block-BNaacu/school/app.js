@@ -33,9 +33,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/students', studentRouter);
 
-app.get('/', (req, res) => {
-  res.render('views', { list: ['ankit', 'suraj', 'prashant', 'ravi'] });
-})
+// app.get('/', (req, res) => {
+//   res.render('views', { list: ['ankit', 'suraj', 'prashant', 'ravi'] });
+// })
 // error handler middleware
 
 app.use((req, res, next) => {
