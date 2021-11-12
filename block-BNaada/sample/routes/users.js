@@ -15,9 +15,9 @@ router.get('/', (req, res,next) => {
 
 router.get('/:id', (req, res, next) => {
   var id = req.params.id;
-  User.findById(id, (err, book) => {
+  User.findById(id, (err, user) => {
     if (err) return next(err);
-    res.send(book);
+    res.send(user);
   })
 })
 
