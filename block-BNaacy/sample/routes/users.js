@@ -10,7 +10,7 @@ router.post("/", (req, res,next) => {
   let data = req.body;
      User.create(data, (err, createdUser) => {
        console.log(err, createdUser);
-       if (err) return next(err);
+       if (err) return res.redirect('/users/new');
        res.redirect('/');
      });
 })
